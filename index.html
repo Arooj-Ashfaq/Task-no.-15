@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 01
+        function sum(a,b){
+            return a + b
+        }
+        console.log(sum(10,15))
+
+        // 02
+        let array = [5, 8, 2, 9]
+        function findMax(array){
+            return Math.max(...array)
+        }     
+        console.log(findMax(array))  
+
+        // 03
+        const str = 'maham'
+        const reversedStr = str.split('').reverse().join('')
+        function isPalindrome(str){
+            if (str = reversedStr){
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        console.log(isPalindrome(str))
+
+        // 04
+        let string = 'classroom'
+        let reverse = string.split('').reverse().join('')
+        console.log(reverse)
+
+        // 05
+        const arr = [1, 2, 3, 4, 5]
+        const evenNum = arr.filter((arr) => arr % 2 === 0)
+        console.log(evenNum)
+
+        // 06
+        let n = 5
+        function factorial(n){
+            if(n === 0){
+                return 1;
+            }
+            else{
+                return n * factorial(n-1)
+            }
+        }
+        console.log(factorial(n))
+
+        // 07
+        let num = 15;
+        function isPrime(num){
+            if(num <= 1){
+                return false;
+            }
+            for (let i = 2; i <= Math.sqrt(num); i++){
+                if(num % i === 0){
+                    return false;
+                }
+            }
+            return true; 
+        }
+        console.log(isPrime(num))
+    </script>
+</body>
+</html>
